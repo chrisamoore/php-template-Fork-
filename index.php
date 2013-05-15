@@ -5,6 +5,10 @@
     $t = new Template('hello.php');
     $t->greeting = 'Hello';
     $t->who = 'world';
+    $t->array = array(
+				1,2,3
+
+			)
 
     echo $t->execute();
 
@@ -18,15 +22,12 @@
 
     $data = array(
 		'greeting' => 'Hello',
-		'fart' => System::Fart('wet');
+		'fart' => System::Fart('wet'),
 		'who' => 'world',
-		'array' => array(
-				1,2,3
-
-			)
+		'array' =>
 	);
 
 
-       Template::Render('view.php', $data);
-   	?>
+       // Template::Render('view.php', $data);
+	?>
 
